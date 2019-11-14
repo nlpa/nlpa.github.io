@@ -3,8 +3,7 @@
 
   <head>
 
-    <meta http-equiv="content-type" content="text/html">
-    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <!-- <meta name="description" content="">
@@ -35,23 +34,26 @@
           <li><a href="#about">About</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
-          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbar()">&#9776;</a>
         </ul>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbar()">&#9776;</a>
       </nav>
 
     </div>
     <div class="container">
       <header id="main">
-        <a name="main"></a>
+        <a id="main"></a>
         <h1>natalie lampa</h1>
         <h2>user experience designer</h2>
+        <form style="display: inline" action="/#about" method="get">
+          <button type="button"class="btn btn-outline-primary">Visit Website</button>
+        </form>
         <button type="button" class="btn btn-outline-primary"><a href="#about">enter</a></button>
       </header>
       <div class="about-image">
         <img src="img/profile.png" alt="decorative"/>
       </div>
     <div class="text-block">
-      <a name="about"></a>
+      <a id="about"></a>
       <h2>About Me</h2>
       <p>Hi! I'm Natalie. I'm a junior at the University of Michigan pursuing a dual degree between UMSI and LSA
         in Information (UX Design) and Southeast Asian Studies. I'm interested in web design, photography,
@@ -59,11 +61,11 @@
       <p>Outside of academics, I work as a Research Analyst and Developer for the Knowledge Grid team
         at Michigan Medicine, Scheduling Chair of Welcome Wednesdays at the Alumni Association (AAUM),
         and Treasurer of the Filipino-American Student Association.</p><br>
-      <button type="button" class="btn btn-outline-primary"><a href="resume_nlampa.pdf" alt="links to resume pdf">Download Resume</a></button>
+      <button type="button" class="btn btn-outline-primary"><a href="resume_nlampa.pdf">Download Resume</a></button>
     </div>
 
     <div class="portfolio">
-      <a name="portfolio"></a>
+      <a id="portfolio"></a>
       <h2>Portfolio</h2>
     </div>
     <div class="ux_ui">
@@ -98,7 +100,7 @@
 
 
     <div class="contact">
-      <a name="contact"></a>
+      <a id="contact"></a>
       <h2>Contact</h2>
       <p><a href="tel:+1-773-273-0448">+1-773-273-0448</a></p>
       <p><a href="mailto:nlampa@umich.edu">email: nlampa@umich.edu</a></p>
