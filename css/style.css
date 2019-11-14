@@ -193,8 +193,8 @@ footer .info {
   filter: grayscale(80%)
 }
 .ux_ui img:hover {
-  -webkit-filter: opacity(50%);
-  filter: opacity(50%);
+  -webkit-filter: opacity(70%);
+  filter: opacity(70%);
 }
 
 #main a, .text-block a {
@@ -363,7 +363,11 @@ footer .info {
     align-content: center;
   }
 
-
+  .contact, .form-all {
+    padding-left:0px;
+    padding-right:0px;
+    width:350px;
+  }
 
 }
 
@@ -400,6 +404,11 @@ footer .info {
     text-align: center;
     justify-content: center;
     align-content: center;
+  }
+  .contact, .form-all {
+    padding-left:0px;
+    padding-right:0px;
+    width:500px;
   }
 
 }
