@@ -166,9 +166,10 @@ header{
 .contact {
   grid-row: 8;
   text-align: center;
-  grid-column: 5/8;
+  grid-column: 1/-1;
+  padding-left: 400px;
+  padding-right: 400px;
 }
-
 
 footer {
     padding: 3em;
@@ -199,6 +200,11 @@ footer .info {
 #main a, .text-block a {
     color: ghostwhite;
 }
+
+.contact a {
+  color: ghostwhite;
+}
+
 
 .btn {
     font-size: .8rem;
