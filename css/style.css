@@ -187,9 +187,13 @@ footer .info {
     margin-bottom: 3em;
 }
 
-.programming img:hover, .graphic_des img:hover, .ux_ui img:hover {
+.programming img:hover, .graphic_des img:hover{
   -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
   filter: grayscale(80%)
+}
+.ux_ui img:hover {
+  -webkit-filter: opacity(50%);
+  filter: opacity(50%);
 }
 
 #main a, .text-block a {
@@ -287,7 +291,7 @@ footer .info {
 }
 
 /* for mobile*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 500px){
   .container{
     display:flex;
     align-items: center;
@@ -299,6 +303,15 @@ footer .info {
     align-self: center;
     justify-content: center;
     padding-left: 0px;
+  }
+  .about-image img {
+    height: 150px;
+    width: 150px;
+    padding-top: 80px;
+  }
+  .text-block {
+    text-align: center;
+    background-color: transparent;
   }
   header {
     height:150px;
@@ -349,9 +362,38 @@ footer .info {
 }
 
 /*for tablets change back to 481px*/
-@media screen and (min-width: 600px) and (max-width: 1024px){
+@media screen and (min-width: 501px) and (max-width: 1024px){
+  .container{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .about-image{
+    align-self: center;
+    justify-content: center;
+    padding: 0px;
+  }
+  .about-image img{
+    height: 200px;
+    width: 200px;
+    padding-top: 120px;
+    padding-bottom: 20px;
+  }
+  .text-block {
+    text-align: center;
+    background-color: transparent;
+  }
   header {
-    height:500px;
+    height:400px;
+  }
+  .ux_ui, .programming, .graphic_des {
+    padding-left: 0px;
+    padding-bottom: 50px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
   }
 
 }
