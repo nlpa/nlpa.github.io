@@ -1,22 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
-<!-- Basic Page Needs––––––––––––––––––––––––––– -->
-<!-- this is a comment -->
-<head>
-    
+  <head>
+
     <meta http-equiv="content-type" content="text/html">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="">
-    <title>natalie lampa</title>
-    
+    <meta name="author" content=""> -->
+    <title>Natalie Lampa</title>
+
     <link rel="stylesheet" href="css/html5reset.css">
-    <!-- Bootstrap Core CSS ––––––––––––––––––––––––––– -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS ––––––––––––––––––––––––––– -->
     <link href="css/style.css" rel="stylesheet">
     <!-- fontawesome ––––––––––––––––––––––––––– -->
@@ -27,203 +23,131 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i" rel="stylesheet">
     <!-- Favicon––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-</head>
 
-<body>
-    <!--  content  -->
-    
-    <div class="view">
+  </head>
+
+  <body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <div class="nav" id="topnav">
+      <nav>
+        <ul>
+          <li><a href="#main">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbar()">&#9776;</a>
+        </ul>
+      </nav>
+
+    </div>
+    <div class="container">
+      <header id="main">
+        <a name="main"></a>
         <h1>natalie lampa</h1>
-        <h3>user experience designer</h3>
+        <h2>user experience designer</h2>
         <button type="button" class="btn btn-outline-primary"><a href="#about">enter</a></button>
-<!--        <a class="btn enter page-scroll" href="#about">enter</a>-->
-    </div>
-    
-    <div class="blue" id="about">
-    <div class="container-fluid">
-    <div class="row justify-content-center">
-        <div class="col-sm-2">    
-            <img class="img-fluid me" src="img/profile.png" alt="me" />
-        </div>
-        <div class="col-sm-5">
-            <!--left side-->
-            <h2>About Me</h2>
-<!--        <a href="#" target="_blank"> link </a>-->
-            <p> Hi! I'm Natalie. I'm a junior at the University of Michigan pursuing a dual degree between UMSI and LSA, studying Information (UX Design) and Southeast Asian Studies. I'm interested in web design, photography, and big data visualization. I am comfortable using C++, Python, and Adobe Photoshop CS6. </p>
-            <p>Outside of academics, I work as a Research Analyst and Developer for the Knowledge Grid team at Michigan Medicine, Scheduling Chair of Welcome Wednesdays at the Alumni Association (AAUM), and Treasurer of the Filipino-American Student Association.</p>
-            <button type="button" class="btn btn-outline-second"><a class="a2" href="resume_nlampa.pdf">Download Resume</a> </button>
-        </div>
-    
-    </div>  
-    </div>
+      </header>
+      <div class="about-image">
+        <img src="img/profile.png" alt="decorative"/>
+      </div>
+    <div class="text-block">
+      <a name="about"></a>
+      <h2>About Me</h2>
+      <p>Hi! I'm Natalie. I'm a junior at the University of Michigan pursuing a dual degree between UMSI and LSA
+        in Information (UX Design) and Southeast Asian Studies. I'm interested in web design, photography,
+        and big data visualization. I am comfortable using C++, Python, and Adobe Photoshop CS6. </p>
+      <p>Outside of academics, I work as a Research Analyst and Developer for the Knowledge Grid team
+        at Michigan Medicine, Scheduling Chair of Welcome Wednesdays at the Alumni Association (AAUM),
+        and Treasurer of the Filipino-American Student Association.</p><br>
+      <button type="button" class="btn btn-outline-primary"><a href="resume_nlampa.pdf" alt="links to resume pdf">Download Resume</a></button>
     </div>
 
-<!--portfolio-->
-    <div class="teal" id="portfolio">
-    <div class="container portfolio">
-         <h5 class="text-center">Portfolio</h5>
-            <div class="row">
-                <p>UX/UI Projects</p>
-                <p>Programming Projects</p>
-                <p>Graphic Design Projects</p>
-                <div class="col-sm-4 text-center">
-                    <!--                wrap picture with a tag-->
-                    <a href="#" class="portfolio-link " data-toggle="modal" data-target="#portfolioModal1">
-        
-                    <img class="img-fluid " src="img/knowledge.png" alt="work ">
-                    </a>
-                    <!--    for space between pic and title -->
-                <p> </p>
-                <p>KGrid: Risk Score Validator</p>
-                
-                </div>
-                
-                <div class="col-sm-4 text-center">
-                    <a href="#" class="portfolio-link " data-toggle="modal" data-target="#portfolioModal2">
-                        <img class="img-fluid " src="img/glass.png" alt="work "> 
-                    </a>
-                    <p> </p>
-                    <p>Letterman</p>
-                </div>
-                
-                <div class="col-sm-4 text-center">
-                    <!--                wrap picture with a tag-->
-                    <a href="#" class="portfolio-link " data-toggle="modal" data-target="#portfolioModal3">
-        
-                            <img class="img-fluid " src="img/cards.png" alt="work ">
-                    </a>
-                    <p> </p>
-                    <p>KGrid: Medication Risk Scale Web App</p>
-                </div>
-                
-                <div class="col-sm-4 text-center">
-                    <!--                wrap picture with a tag-->
-                    <a href="#" class="portfolio-link " data-toggle="modal" data-target="#portfolioModal3">
-        
-                            <img class="img-fluid " src="img/cards.png" alt="work ">
-                    </a>
-                    <p> </p>
-                    <p>Resilience in Ann Arbor Neighborhoods</p>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <!--                wrap picture with a tag-->
-                    <a href="#" class="portfolio-link " data-toggle="modal" data-target="#portfolioModal3">
-        
-                            <img class="img-fluid " src="img/cards.png" alt="work ">
-                    </a>
-                    <p> </p>
-                    <p>My Resources Chicago</p>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <!--                wrap picture with a tag-->
-                    <a href="#" class="portfolio-link " data-toggle="modal" data-target="#portfolioModal3">
-        
-                            <img class="img-fluid " src="img/cards.png" alt="work ">
-                    </a>
-                    <p> </p>
-                    <p>Euchre</p>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <!--                wrap picture with a tag-->
-                    <a href="#" class="portfolio-link " data-toggle="modal" data-target="#portfolioModal3">
-        
-                            <img class="img-fluid " src="img/cards.png" alt="work ">
-                    </a>
-                    <p> </p>
-                    <p>Untitled, 2016</p>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <!--                wrap picture with a tag-->
-                    <a href="#" class="portfolio-link " data-toggle="modal" data-target="#portfolioModal3">
-        
-                            <img class="img-fluid " src="img/cards.png" alt="work ">
-                    </a>
-                    <p> </p>
-                    <p>Untitled, 2016</p>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <!--                wrap picture with a tag-->
-                    <a href="#" class="portfolio-link " data-toggle="modal" data-target="#portfolioModal3">
-        
-                            <img class="img-fluid " src="img/cards.png" alt="work ">
-                    </a>
-                    <p> </p>
-                    <p>Untitled, 2016</p>
-                </div>
-         </div>
+    <div class="portfolio">
+      <a name="portfolio"></a>
+      <h2>Portfolio</h2>
+    </div>
+    <div class="ux_ui">
+      <h3>UX/UI Projects</h3>
+      <img src="img/noun_neighborhood.png" alt="decorative"/>
+      <p>Resilience in Ann Arbor Neighborhoods</p>
+      <img src="img/noun_code.png" alt="decorative"/>
+      <p>KGrid: Medication Risk Scale Web App</p>
+      <img src="img/noun_map.png" alt="decorative"/>
+      <p>My Resources Chicago</p>
+    </div>
+    <div class="programming">
+      <h3>Programming Projects</h3><br><br>
+      <img src="img/knowledge.png" alt="decorative">
+      <p>KGrid: Risk Score Validator</p>
+      <br><br><br><br>
+      <img src="img/glass.png" alt="decorative">
+      <p>Letterman</p>
+      <br><br><br><br>
+      <img src="img/cards.png" alt="decorative">
+      <p>Euchre</p>
+    </div>
+    <div class="graphic_des">
+      <h3>Graphic Design Projects</h3>
+      <img src="img/untitled_one.jpg" alt="decorative">
+      <p>Untitled 1, 2016</p>
+      <img src="img/untitled_two.jpg" alt="decorative">
+      <p>Untitled 2, 2016</p>
+      <img src="img/untitled_three.jpg" alt="decorative">
+      <p>Untitled 3, 2016</p>
+    </div>
+
+
+    <div class="contact">
+      <a name="contact"></a>
+      <h2>Contact Me</h2>
+      <script type="text/javascript" src="https://form.jotform.com/jsform/90746810539160"></script>
 
     </div>
     </div>
-    
-<!--    contact-->
+
     <footer>
-    <div class="container" id="contact">
-        <h7 class="text-center">Contact</h7>
+       <!-- <div class="container" id="contact">
+           <h7 class="text-center">Contact</h7>
 
-        <div class="info">
-            <p class="text-center"> <a href="tel:+1-773-273-0448">+1-773-273-0448</a></p>
-            <p class="text-center"> <a href="mailto:nlampa@umich.edu">Email Address</a></p>
-            <div class="row justify-content-center">
-                <div class="col-auto"><a class="social" href="https://www.facebook.com/nlmpa8" target="_blank"><i class="fab fa-facebook-square"></i></a></div>
-                <div class="col-auto"><a class="social" href="https://www.linkedin.com/in/natalie-lampa-b8478b156/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
-                <div class="col-auto"><a class="social" href="https://www.instagram.com/natalie.png/" target="_blank"><i class="fab fa-instagram"></i></a></div>
+           <div class="info">
+               <p class="text-center"> <a href="tel:+1-773-273-0448">+1-773-273-0448</a></p>
+               <p class="text-center"> <a href="mailto:nlampa@umich.edu">Email Address</a></p>
+               <div class="row justify-content-center">
+                   <div class="col-auto"><a class="social" href="https://www.facebook.com/nlmpa8" target="_blank"><i class="fab fa-facebook-square"></i></a></div>
+                   <div class="col-auto"><a class="social" href="https://www.linkedin.com/in/natalie-lampa-b8478b156/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+                   <div class="col-auto"><a class="social" href="https://www.instagram.com/natalie.png/" target="_blank"><i class="fab fa-instagram"></i></a></div>
 
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-sm-6">
-                <!--      Jotform.com          please update the script by your own form-->
-                <script type="text/javascript" src="https://form.jotform.com/jsform/90746810539160"></script>           
-            </div>
+               </div>
+           </div>
+           <div class="row justify-content-center">
+               <div class="col-sm-6">
+                         Jotform.com          please update the script by your own form
+                   <script type="text/javascript" src="https://form.jotform.com/jsform/90746810539160"></script>
+               </div>
 
 
-        </div>
-    </div>
+           </div>
+       </div> -->
 
-</footer>
+   </footer>
 
-<nav class="navbar navbar-expand-md navbar-light navbackground fixed-top">
 
-    <!--     add d-block d-sm-none class name if you just want to brand name apper in phone view.-->
-    <!--        <a class="navbar-brand page-scroll" href="#view">Navbar</a>-->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-    <!--        Try justify-content-start, justify-content-end, justify-content-between to see different layout styles for the navigation.-->
-    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link page-scroll" href="#about">About <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link page-scroll" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link page-scroll" href="#contact">Contact</a>
-            </li>
 
-        </ul>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="Resume_nlampa.pdf">Download Resume</a>
-
-            </li>
-        </ul>
-
-    </div>
-</nav>
 
 
 
 
 </body>
-    
+
 <!--    load scripts later to make website load faster-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+
 <script src="js/script.js"></script>
 
 
-<!--animation-->
+<!-- animation-->
 <!--js files-->
 <!--Animation-->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js "></script>
@@ -232,494 +156,21 @@
 
 <body data-spy="scroll" data-target=".fixed-top" data-offset="100">
 
-    
+
 </html>
 
 <!--adding portfolio modal html-->
 <!--modal 1-->
 <!--don't change the id other than the # so portfolioModal2 is ok-->
-<div class="portfolio-modal modal" id="portfolioModal1" tabindex="-1 " role="dialog " aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header justify-content-end">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <div class="modal-inner">
 
-                        <!--content goes here-->
-
-                        <div class="row">
-
-                            <div class="col-sm-7">
-                                <!--  Replace the image src path with your own images. The minimum image width is 720px-->
-                                <!--                                    mx-auto and d-block are two classes that will center the images in the grid-->
-                                <img src="img/kg_logo.png" class="mx-auto d-block img-fluid mb-5" alt=" ">
-                            </div>
-                            <!--                    end of left part-->
-                            <div class="col-sm-4">
-                                <h2>Knowledge Grid</h2>
-                                <h6>Comparing Lung Cancer Risk Models Using an Open Source Infrastructure for Predictive Model Management and Stewardship</h6>
-                                <h6>Collaborated with a team through the Undergraduate Research Opportunities Program to create a program using the Python language to validate the variability between lung cancer risk models.</h6>
-                                <a href="abs_Kgrid.pdf">Abstract</a>
-                                <ul class="list-inline item-details ">
-                                    <li>
-                                        <strong><a2 href="#">Department of Learning Health Sciences, Michigan Medicine</a2></strong>
-                                    </li>
-                                    <li>Date:
-                                        <strong><a2 href="#">September 2017 - April 2018</a2></strong>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--                    end of right part-->
-                        </div>
-
-
-                    </div>
-                    <div class="row bottom">
-                        <a href="#" class="mr-auto" data-dismiss="modal">Return</a>
-                        <a class="prev" href="#" onclick="return false;">Prev </a> &nbsp;/ &nbsp;
-                        <a class="next" href="#" onclick="return false;">Next</a>
-                    </div>
-                </div>
-
-            </div>
-            <!--end of portfolio modal-->
-        </div>
-    </div>
-</div>
-
-<div class="portfolio-modal modal" id="portfolioModal2" tabindex="-1 " role="dialog " aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header justify-content-end">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <div class="modal-inner">
-
-                        <!--content goes here-->
-
-                        <div class="row">
-
-                            <div class="col-sm-7">
-                                <!--  Replace the image src path with your own images. The minimum image width is 720px-->
-                                <!--                                    mx-auto and d-block are two classes that will center the images in the grid-->
-                                <img src="img/moritz-schmidt-17467-unsplash.jpg" class="mx-auto d-block img-fluid mb-5" alt=" ">
-                            </div>
-                            <!--                    end of left part-->
-                            <div class="col-sm-4">
-                                <h2>Letterman</h2>
-                                <h6>Implemented a program in C++ using Xcode to read in dictionary text files and find paths from one word to another through transformations</h6>
-                                <ul class="list-inline item-details ">
-                                    <li>Course:
-                                        <strong><a>EECS 281</a></strong>
-                                    </li>
-                                    <li>Date:
-                                        <strong><a>September 2018</a></strong>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--                    end of right part-->
-                        </div>
-
-
-                    </div>
-                    <div class="row bottom">
-                        <a href="#" class="mr-auto" data-dismiss="modal">Return</a>
-                        <a class="prev" href="#" onclick="return false;">Prev</a> &nbsp;/ &nbsp;
-                        <a class="next" href="#" onclick="return false;">Next</a>
-                    </div>
-                </div>
-
-            </div>
-            <!--end of portfolio modal-->
-        </div>
-    </div>
-</div>
-
-<div class="portfolio-modal modal" id="portfolioModal3" tabindex="-1 " role="dialog " aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header justify-content-end">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <div class="modal-inner">
-
-                        <!--content goes here-->
-
-                        <div class="row">
-
-                            <div class="col-sm-7">
-                                <!--  Replace the image src path with your own images. The minimum image width is 720px-->
-                                <!--                                    mx-auto and d-block are two classes that will center the images in the grid-->
-                                <img src="img/jack-hamilton-320934-unsplash.jpg" class="mx-auto d-block img-fluid mb-5" alt=" ">
-                            </div>
-                            <!--                    end of left part-->
-                            <div class="col-sm-5">
-                                <h2>Euchre</h2>
-                                <h6>Implemented a program in C++ using Xcode to simulate the card game "euchre"</h6>
-                                <ul class="list-inline item-details ">
-                                    <li>Course:
-                                        <strong><a>EECS 280</a></strong>
-                                    </li>
-                                    <li>Date:
-                                        <strong><a>September 2017</a></strong>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--                    end of right part-->
-                        </div>
-
-
-                    </div>
-                    <div class="row bottom">
-                        <a href="#" class="mr-auto" data-dismiss="modal">Return</a>
-                        <a class="prev" href="#" onclick="return false;">Prev</a> &nbsp;/ &nbsp;
-                        <a class="next" href="#" onclick="return false;">Next</a>
-                    </div>
-                </div>
-
-            </div>
-            <!--end of portfolio modal-->
-        </div>
-    </div>
-</div>
-
-<div class="portfolio-modal modal" id="portfolioModal1" tabindex="-1 " role="dialog " aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header justify-content-end">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <div class="modal-inner">
-
-                        <!--content goes here-->
-
-                        <div class="row">
-
-                            <div class="col-sm-7">
-                                <!--  Replace the image src path with your own images. The minimum image width is 720px-->
-                                <!--                                    mx-auto and d-block are two classes that will center the images in the grid-->
-                                <img src="img/kg_logo.png" class="mx-auto d-block img-fluid mb-5" alt=" ">
-                            </div>
-                            <!--                    end of left part-->
-                            <div class="col-sm-4">
-                                <h2>Knowledge Grid</h2>
-                                <h6>Comparing Lung Cancer Risk Models Using an Open Source Infrastructure for Predictive Model Management and Stewardship</h6>
-                                <h6>Collaborated with a team through the Undergraduate Research Opportunities Program to create a program using the Python language to validate the variability between lung cancer risk models.</h6>
-                                <a href="abs_Kgrid.pdf">Abstract</a>
-                                <ul class="list-inline item-details ">
-                                    <li>
-                                        <strong><a2 href="#">Department of Learning Health Sciences, Michigan Medicine</a2></strong>
-                                    </li>
-                                    <li>Date:
-                                        <strong><a2 href="#">September 2017 - April 2018</a2></strong>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--                    end of right part-->
-                        </div>
-
-
-                    </div>
-                    <div class="row bottom">
-                        <a href="#" class="mr-auto" data-dismiss="modal">Return</a>
-                        <a class="prev" href="#" onclick="return false;">Prev </a> &nbsp;/ &nbsp;
-                        <a class="next" href="#" onclick="return false;">Next</a>
-                    </div>
-                </div>
-
-            </div>
-            <!--end of portfolio modal-->
-        </div>
-    </div>
-</div>
-
-<div class="portfolio-modal modal" id="portfolioModal2" tabindex="-1 " role="dialog " aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header justify-content-end">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <div class="modal-inner">
-
-                        <!--content goes here-->
-
-                        <div class="row">
-
-                            <div class="col-sm-7">
-                                <!--  Replace the image src path with your own images. The minimum image width is 720px-->
-                                <!--                                    mx-auto and d-block are two classes that will center the images in the grid-->
-                                <img src="img/moritz-schmidt-17467-unsplash.jpg" class="mx-auto d-block img-fluid mb-5" alt=" ">
-                            </div>
-                            <!--                    end of left part-->
-                            <div class="col-sm-4">
-                                <h2>Letterman</h2>
-                                <h6>Implemented a program in C++ using Xcode to read in dictionary text files and find paths from one word to another through transformations</h6>
-                                <ul class="list-inline item-details ">
-                                    <li>Course:
-                                        <strong><a>EECS 281</a></strong>
-                                    </li>
-                                    <li>Date:
-                                        <strong><a>September 2018</a></strong>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--                    end of right part-->
-                        </div>
-
-
-                    </div>
-                    <div class="row bottom">
-                        <a href="#" class="mr-auto" data-dismiss="modal">Return</a>
-                        <a class="prev" href="#" onclick="return false;">Prev</a> &nbsp;/ &nbsp;
-                        <a class="next" href="#" onclick="return false;">Next</a>
-                    </div>
-                </div>
-
-            </div>
-            <!--end of portfolio modal-->
-        </div>
-    </div>
-</div>
-
-<div class="portfolio-modal modal" id="portfolioModal3" tabindex="-1 " role="dialog " aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header justify-content-end">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <div class="modal-inner">
-
-                        <!--content goes here-->
-
-                        <div class="row">
-
-                            <div class="col-sm-7">
-                                <!--  Replace the image src path with your own images. The minimum image width is 720px-->
-                                <!--                                    mx-auto and d-block are two classes that will center the images in the grid-->
-                                <img src="img/jack-hamilton-320934-unsplash.jpg" class="mx-auto d-block img-fluid mb-5" alt=" ">
-                            </div>
-                            <!--                    end of left part-->
-                            <div class="col-sm-5">
-                                <h2>Euchre</h2>
-                                <h6>Implemented a program in C++ using Xcode to simulate the card game "euchre"</h6>
-                                <ul class="list-inline item-details ">
-                                    <li>Course:
-                                        <strong><a>EECS 280</a></strong>
-                                    </li>
-                                    <li>Date:
-                                        <strong><a>September 2017</a></strong>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--                    end of right part-->
-                        </div>
-
-
-                    </div>
-                    <div class="row bottom">
-                        <a href="#" class="mr-auto" data-dismiss="modal">Return</a>
-                        <a class="prev" href="#" onclick="return false;">Prev</a> &nbsp;/ &nbsp;
-                        <a class="next" href="#" onclick="return false;">Next</a>
-                    </div>
-                </div>
-
-            </div>
-            <!--end of portfolio modal-->
-        </div>
-    </div>
-</div>
-    
-<div class="portfolio-modal modal" id="portfolioModal1" tabindex="-1 " role="dialog " aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header justify-content-end">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <div class="modal-inner">
-
-                        <!--content goes here-->
-
-                        <div class="row">
-
-                            <div class="col-sm-7">
-                                <!--  Replace the image src path with your own images. The minimum image width is 720px-->
-                                <!--                                    mx-auto and d-block are two classes that will center the images in the grid-->
-                                <img src="img/kg_logo.png" class="mx-auto d-block img-fluid mb-5" alt=" ">
-                            </div>
-                            <!--                    end of left part-->
-                            <div class="col-sm-4">
-                                <h2>Knowledge Grid</h2>
-                                <h6>Comparing Lung Cancer Risk Models Using an Open Source Infrastructure for Predictive Model Management and Stewardship</h6>
-                                <h6>Collaborated with a team through the Undergraduate Research Opportunities Program to create a program using the Python language to validate the variability between lung cancer risk models.</h6>
-                                <a href="abs_Kgrid.pdf">Abstract</a>
-                                <ul class="list-inline item-details ">
-                                    <li>
-                                        <strong><a2 href="#">Department of Learning Health Sciences, Michigan Medicine</a2></strong>
-                                    </li>
-                                    <li>Date:
-                                        <strong><a2 href="#">September 2017 - April 2018</a2></strong>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--                    end of right part-->
-                        </div>
-
-
-                    </div>
-                    <div class="row bottom">
-                        <a href="#" class="mr-auto" data-dismiss="modal">Return</a>
-                        <a class="prev" href="#" onclick="return false;">Prev </a> &nbsp;/ &nbsp;
-                        <a class="next" href="#" onclick="return false;">Next</a>
-                    </div>
-                </div>
-
-            </div>
-            <!--end of portfolio modal-->
-        </div>
-    </div>
-</div>
-
-<div class="portfolio-modal modal" id="portfolioModal2" tabindex="-1 " role="dialog " aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header justify-content-end">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <div class="modal-inner">
-
-                        <!--content goes here-->
-
-                        <div class="row">
-
-                            <div class="col-sm-7">
-                                <!--  Replace the image src path with your own images. The minimum image width is 720px-->
-                                <!--                                    mx-auto and d-block are two classes that will center the images in the grid-->
-                                <img src="img/moritz-schmidt-17467-unsplash.jpg" class="mx-auto d-block img-fluid mb-5" alt=" ">
-                            </div>
-                            <!--                    end of left part-->
-                            <div class="col-sm-4">
-                                <h2>Letterman</h2>
-                                <h6>Implemented a program in C++ using Xcode to read in dictionary text files and find paths from one word to another through transformations</h6>
-                                <ul class="list-inline item-details ">
-                                    <li>Course:
-                                        <strong><a>EECS 281</a></strong>
-                                    </li>
-                                    <li>Date:
-                                        <strong><a>September 2018</a></strong>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--                    end of right part-->
-                        </div>
-
-
-                    </div>
-                    <div class="row bottom">
-                        <a href="#" class="mr-auto" data-dismiss="modal">Return</a>
-                        <a class="prev" href="#" onclick="return false;">Prev</a> &nbsp;/ &nbsp;
-                        <a class="next" href="#" onclick="return false;">Next</a>
-                    </div>
-                </div>
-
-            </div>
-            <!--end of portfolio modal-->
-        </div>
-    </div>
-</div>
-
-<div class="portfolio-modal modal" id="portfolioModal3" tabindex="-1 " role="dialog " aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header justify-content-end">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <div class="modal-inner">
-
-                        <!--content goes here-->
-
-                        <div class="row">
-
-                            <div class="col-sm-7">
-                                <!--  Replace the image src path with your own images. The minimum image width is 720px-->
-                                <!--                                    mx-auto and d-block are two classes that will center the images in the grid-->
-                                <img src="img/jack-hamilton-320934-unsplash.jpg" class="mx-auto d-block img-fluid mb-5" alt=" ">
-                            </div>
-                            <!--                    end of left part-->
-                            <div class="col-sm-5">
-                                <h2>Euchre</h2>
-                                <h6>Implemented a program in C++ using Xcode to simulate the card game "euchre"</h6>
-                                <ul class="list-inline item-details ">
-                                    <li>Course:
-                                        <strong><a>EECS 280</a></strong>
-                                    </li>
-                                    <li>Date:
-                                        <strong><a>September 2017</a></strong>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--                    end of right part-->
-                        </div>
-
-
-                    </div>
-                    <div class="row bottom">
-                        <a href="#" class="mr-auto" data-dismiss="modal">Return</a>
-                        <a class="prev" href="#" onclick="return false;">Prev</a> &nbsp;/ &nbsp;
-                        <a class="next" href="#" onclick="return false;">Next</a>
-                    </div>
-                </div>
-
-            </div>
-            <!--end of portfolio modal-->
-        </div>
-    </div>
-</div>
-    
 <!-- modal text to be replaced
 KGrid Medication Risk Scale App
 2018-2019
-Developed medication comparison web application with team members utilizing Vue.js and JavaScript to crowd-source a fine-grained medication risk scale  
+Developed medication comparison web application with team members utilizing Vue.js and JavaScript to crowd-source a fine-grained medication risk scale
 
 My Resources Chicago
 One Summer Chicago, July-August 2019
-Developed a prototype iOS application utilizing Swift and Xcode in order to raise awareness of Chicago’s diverse support services as part of Apple’s Everyone Can Code program 
+Developed a prototype iOS application utilizing Swift and Xcode in order to raise awareness of Chicago’s diverse support services as part of Apple’s Everyone Can Code program
 
 Presented prototype for judging and placed 1st within Mather High School and 3rd overall within the district
 
@@ -730,7 +181,7 @@ SI 350
 Researchers interviewed six residents from Southwestern Ann Arbor (Ward 4), in the Dicken and Allmendinger neighborhoods. They were able to identify the emotions, motivations, and needs of these residents through analyzing the gathered data. Residents expressed that resilience was closely related to community engagement. Users also placed importance on governmental communication and consistency during problems in their communities. If the city of Ann Arbor made efforts to generate community closeness, clarify its responsibilities, and consolidate important information from the city website, residents would be able to better foster community resilience.
 
 
-Untitled, 2016 
+Untitled, 2016
 AP 2D Design; Photoshop CS6
 The base for each piece stems from photographs I took while in the Philippines. By taking photographs outside of the city, I am able to show a unique environment that one wouldn’t typically see everyday. I first decide on the parts of the photo that stand out most and build off of those elements for emphasis. I maintain balance and create rhythm with the use and repetition of shapes.
 
