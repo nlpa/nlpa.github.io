@@ -297,7 +297,7 @@ footer .info {
   color: black;
 }
 
-/* for mobile*/
+/* for mobile
 @media screen and (max-width: 500px){
   .container{
     display:flex;
@@ -372,7 +372,7 @@ footer .info {
 
 }
 
-/*for tablets change back to 481px*/
+/*for tablets change back to 481px
 @media screen and (min-width: 501px) and (max-width: 1024px){
   .container{
     display:flex;
@@ -435,3 +435,4 @@ footer .info {
     top:0;
   }
 }
+*/
