@@ -2,6 +2,7 @@
 html {
     scroll-behavior: smooth;
     /* font-size: 1em; */
+    filter: grayscale(80%)
 }
 
 body {
@@ -98,7 +99,7 @@ footer{
   min-width: 0;
   min-height: 0;
 
-  grid-template-rows: 20px 1200px repeat(4, 500px) 100px;
+/*  grid-template-rows: 20px 1200px repeat(4, 500px) 100px;*/
   width: 100vw;
 }
 
@@ -118,6 +119,7 @@ header{
   overflow: hidden;
 }
 
+/*
 .about-image{
   grid-column: 3/5;
   grid-row: 3/4;
@@ -185,6 +187,7 @@ footer .info {
     margin-top: 2em;
     margin-bottom: 3em;
 }
+*/
 
 .programming img:hover, .graphic_des img:hover{
   -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
