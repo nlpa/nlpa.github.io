@@ -16,7 +16,7 @@ html, body {
 img {
   width: 100%;
   height: auto;
-  max-width: 250px;
+  max-width: 200px;
   min-width: 100px;
 }
 
@@ -134,14 +134,7 @@ header{
 }
 
 .text-block{
-/*
-  grid-column: 5/9;
-  grid-row: 3/4;
-*/
   text-align: center;
-
-/*  align-self: center;*/
-/*  background-color: rgba(0, 0, 0, .8);*/
   padding-top: 100px;
   padding-left: 400px;
   padding-right: 400px;
@@ -149,16 +142,9 @@ header{
 }
 
 .portfolio {
-/*
-  display: grid;
-  text-align: center;
-  grid-column: 1/-1;
-  grid-row: 1;
-*/
   padding-left: 100px;
   padding-top: 50px;
   padding-right: 100px;
-  
 }
 
 .portfolio-items {
@@ -171,25 +157,12 @@ header{
   display: grid;
   grid-gap: 50px;
   grid-template-columns: auto auto auto;
-/*  background-color: #2196F3;*/
-
-/*
-  padding-left: 100px;
-  padding-top: 50px;
-  padding-right: 100px;
-*/
 }
 
 .grid-item {
-/*  background-color: white;*/
-/*  border: 1px solid rgba(0, 0, 0, 0.8);*/
-  
-/*  padding: 20px;*/
-/*  font-size: 30px;*/
   text-align: center;
   padding: 10px;
   position: relative;
-  
 }
 
 .centered {
@@ -200,10 +173,7 @@ header{
 }
 
 .contact {
-/*  padding-left: 100px;*/
   padding-top: 50px;
-/*  padding-right: 100px;*/
-/*  grid-row: 8;*/
   text-align: center;
 /*  grid-column: 1/-1;*/
   padding-left: 400px;
@@ -212,7 +182,6 @@ header{
 
 .footer {
     padding: 3em;
-/*    background-color: white;*/
     text-align: center;
     color: aliceblue;
 }
@@ -232,22 +201,6 @@ header{
   -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
   filter: grayscale(80%)
 }
-/*
-.ux img:hover {
-  -webkit-filter: opacity(70%);
-  filter: opacity(70%);
-}
-*/
-
-/*
-#main a, .text-block a {
-    color: black;
-}
-
-.contact a {
-  color: black;
-}
-*/
 
 
 .btn {
@@ -347,32 +300,33 @@ header{
     justify-content: flex-start;
     flex-direction: column;
   }
-
-  .about-image {
+  .about-img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    min-width: 50px;
+  }
+    
+  .text-block {
     align-self: center;
     justify-content: center;
-    padding-left: 0px;
-  }
-  .about-image img {
-    height: 150px;
-    width: 150px;
-    padding-top: 80px;
-  }
-  .text-block {
     text-align: center;
     background-color: transparent;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
   }
   header {
     height:150px;
   }
-  header h1 {
-    font-size: 32px;
+  h1 {
+    font-size: 17pt;
   }
-  header h2 {
-    font-size: 22px;
+  h2 {
+    font-size: 15pt;
   }
   .p {
-    font-size: 20px;
+    font-size: 15pt;
   }
   .nav a, .dropdown .dropbtn {
     display: none;
@@ -422,24 +376,27 @@ header{
     justify-content: flex-start;
     flex-direction: column;
   }
-
-  .about-image{
-    align-self: center;
-    justify-content: center;
-    padding: 0px;
+  .about-img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
   }
-  .about-image img{
-    height: 200px;
-    width: 200px;
-    padding-top: 120px;
-    padding-bottom: 20px;
-  }
+    
   .text-block {
     text-align: center;
     background-color: transparent;
+    padding-left: 150px;
+    padding-top: 100px;
+    padding-right: 150px;
   }
-  header {
-    height:400px;
+  h1 {
+    font-size: 17pt;
+  }
+  h2 {
+    font-size: 15pt;
+  }
+  .p {
+    font-size: 15pt;
   }
   .ux_ui, .programming, .graphic_des {
     padding-left: 0px;
