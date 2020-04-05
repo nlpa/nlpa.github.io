@@ -84,7 +84,6 @@ footer{
   top: 0;
   vertical-align: middle;
   color: white;
-  /* padding: 20px 0px 0px 0px; */
   display: block;
   float:right;
   text-align: right;
@@ -122,7 +121,6 @@ header{
 
 
 .about-image{
-
   padding-left: 400px;
   padding-top: 50px;
   padding-right: 400px;
@@ -169,7 +167,6 @@ header{
 .contact {
   padding-top: 50px;
   text-align: center;
-/*  grid-column: 1/-1;*/
   padding-left: 400px;
   padding-right: 400px;
 }
@@ -257,7 +254,6 @@ header{
 .dropdown-content {
   display: none;
   position: absolute;
-/*  background-color: #f9f9f9;*/
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -310,9 +306,7 @@ header{
     padding-top: 50px;
     padding-right: 50px;
   }
-/*
 
-*/
   h1 {
     font-size: 17pt;
   }
@@ -345,6 +339,10 @@ header{
   nav li {
     display: block;
   }
+    
+  .portfolio {
+    padding-top: 100px;
+  }
 
   .contact, .form-all {
     padding-left:0px;
@@ -356,6 +354,7 @@ header{
 
 /*for tablets change back to 481px*/
 @media screen and (min-width: 501px) and (max-width: 1024px){
+/*
   .grid-container{
     display:flex;
     align-items: center;
@@ -364,6 +363,7 @@ header{
     background-color: transparent;
 
   }
+*/
   .about-img {
     width: 100%;
     height: auto;
@@ -377,13 +377,19 @@ header{
     padding-top: 100px;
     padding-right: 150px;
   }
+      
+  .portfolio {
+    padding-top: 60px;
+  }
     
   h1 {
     font-size: 17pt;
   }
+    
   h2 {
     font-size: 15pt;
   }
+    
   .p {
     font-size: 15pt;
   }
@@ -396,9 +402,8 @@ header{
 
 }
 
-
-
 @media screen and (prefers-reduced-motion: reduce){
+    
   html{
       scroll-behavior: auto;
   }
@@ -417,4 +422,5 @@ header{
   .skip a:focus{
     top:0;
   }
+    
 }
