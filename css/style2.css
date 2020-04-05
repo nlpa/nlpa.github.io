@@ -1,28 +1,21 @@
 
-html, body {
+html {
     scroll-behavior: smooth;
     /* font-size: 1em; */
 /*    filter: grayscale(80%)*/
-    background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    
+}
+
+body {
+    background-color: #476469;
+    /* might change */
     font-size: 16px;
+    margin: 0;
+    padding: 0;
+
+    /* might change */
     font-family: 'Poppins', sans-serif;
     color:white;
-    height: 100%;
 }
-
-
-img {
-  width: 100%;
-  height: auto;
-  max-width: 250px;
-  min-width: 100px;
-}
-
 
 h1{
   font-size: 50px;
@@ -44,7 +37,7 @@ nav li{
 }
 
 .nav a{
-  color: white;
+  color: black;
   font-weight: bold;
   text-decoration: none;
 }
@@ -73,7 +66,7 @@ nav li{
 }
 
 footer{
-/*  background-color: black;*/
+  background-color: black;
   color: white;
   grid-column: 1 / -1;
   grid-row: 7 / auto;
@@ -87,7 +80,7 @@ footer{
   position: -webkit-sticky;
   top: 0;
   vertical-align: middle;
-  color: white;
+
   /* padding: 20px 0px 0px 0px; */
   display: block;
   float:right;
@@ -111,138 +104,107 @@ footer{
 }
 
 header{
-  /* background-attachment: fixed; /* Parallax effect 
+  background-attachment: fixed; /* Parallax effect */
   background-image: url('../img/header_pauljarvis.jpg');
   overflow: hidden;
-  background-position: center;   Parallax effect 
-  background-repeat: no-repeat;  Parallax effect
-  background-size: cover;        Parallax effect 
-  height: 800px;                 Parallax effect */ 
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  height: 800px;                /* Parallax effect */
   text-align: center;
   padding: 200px;
   grid-row: 1/2;
   grid-column: 1/-1;
-/*  max-width:100%;*/
-/*  overflow: hidden;*/
+  max-width:100%;
+  overflow: hidden;
 }
 
-
+/*
 .about-image{
-
-  padding-left: 400px;
-  padding-top: 50px;
-  padding-right: 400px;
+  grid-column: 3/5;
+  grid-row: 3/4;
+  align-self: center;
 }
 
 .text-block{
-/*
   grid-column: 5/9;
   grid-row: 3/4;
-*/
-  text-align: center;
-
-/*  align-self: center;*/
-/*  background-color: rgba(0, 0, 0, .8);*/
-  padding-top: 100px;
-  padding-left: 400px;
-  padding-right: 400px;
-
+  align-self: center;
+  background-color: rgba(0, 0, 0, .8);
+  padding: 30px;
 }
 
-.portfolio {
-/*
+ .portfolio {
   display: grid;
   text-align: center;
   grid-column: 1/-1;
-  grid-row: 1;
-*/
-  padding-left: 100px;
-  padding-top: 50px;
-  padding-right: 100px;
-  
+  grid-row: 4;
+  padding-top: 300px;
 }
 
-.grid-container {
-  display: grid;
-  grid-gap: 50px;
-  grid-template-columns: auto auto auto;
-/*  background-color: #2196F3;*/
-
-/*
+.ux_ui {
+  grid-column: 3/5;
   padding-left: 100px;
-  padding-top: 50px;
-  padding-right: 100px;
-*/
-}
-
-.grid-item {
-/*  background-color: white;*/
-/*  border: 1px solid rgba(0, 0, 0, 0.8);*/
-  
-/*  padding: 20px;*/
-/*  font-size: 30px;*/
   text-align: center;
-  padding: 10px;
-  position: relative;
-  
+  grid-row: 5;
 }
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.programming {
+  text-align: center;
+  grid-row: 5;
+  padding-left: 100px;
+  grid-column: 5/7;
+}
+
+.graphic_des {
+  grid-row: 5;
+  text-align: center;
+  padding-left: 100px;
+  grid-column: 7/9;
 }
 
 .contact {
-/*  padding-left: 100px;*/
-  padding-top: 50px;
-/*  padding-right: 100px;*/
-/*  grid-row: 8;*/
+  grid-row: 8;
   text-align: center;
-/*  grid-column: 1/-1;*/
+  grid-column: 1/-1;
   padding-left: 400px;
   padding-right: 400px;
 }
 
-.footer {
+footer {
     padding: 3em;
-/*    background-color: white;*/
+    background-color: #687f82;
     text-align: center;
     color: aliceblue;
 }
 
-.footer .social {
+footer .social {
     font-size: .8em;
     color: aliceblue;
 }
 
-.footer .info {
+footer .info {
     margin-top: 2em;
     margin-bottom: 3em;
 }
+*/
 
-
-.grid-item img:hover, .graphic_des img:hover{
+.programming img:hover, .graphic_des img:hover{
   -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
   filter: grayscale(80%)
 }
-/*
-.ux img:hover {
+.ux_ui img:hover {
   -webkit-filter: opacity(70%);
   filter: opacity(70%);
 }
-*/
 
-/*
 #main a, .text-block a {
-    color: black;
+    color: ghostwhite;
 }
 
 .contact a {
-  color: black;
+  color: ghostwhite;
 }
-*/
 
 
 .btn {
@@ -255,18 +217,19 @@ header{
 }
 
 .btn:hover a, #main a:hover{
-/*    color: black;*/
+    color: black;
     font-style: italic;
 }
 
 .btn-outline-primary {
     background-color: transparent;
-    border: 1px white solid;
+    border: 1px ghostwhite solid;
     transition: all .5s;
 }
 
 .btn-outline-primary:hover {
     color: black;
+    background-color: aliceblue;
     opacity: 0.5;
 }
 
@@ -274,7 +237,7 @@ header{
 .nav a {
   float: left;
   display: block;
-/*  color: #f2f2f2;*/
+  color: #f2f2f2;
   text-decoration: none;
   font-size: 17px;
 }
@@ -295,6 +258,7 @@ header{
   font-size: 17px;
   border: none;
   outline: none;
+  color: white;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -305,7 +269,7 @@ header{
 .dropdown-content {
   display: none;
   position: absolute;
-/*  background-color: #f9f9f9;*/
+  background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -314,7 +278,7 @@ header{
 /* Style the links inside the dropdown */
 .dropdown-content a {
   float: none;
-  color: white;
+  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -334,7 +298,7 @@ header{
   color: black;
 }
 
-/*for mobile*/
+/* for mobile
 @media screen and (max-width: 500px){
   .container{
     display:flex;
@@ -409,7 +373,7 @@ header{
 
 }
 
-/*for tablets change back to 481px*/
+/*for tablets change back to 481px
 @media screen and (min-width: 501px) and (max-width: 1024px){
   .container{
     display:flex;
@@ -452,7 +416,6 @@ header{
 }
 
 
-
 @media screen and (prefers-reduced-motion: reduce){
   html{
       scroll-behavior: auto;
@@ -473,3 +436,4 @@ header{
     top:0;
   }
 }
+*/
