@@ -162,6 +162,12 @@ header{
   
 }
 
+.portfolio-items {
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-right: 100px;
+}
+
 .grid-container {
   display: grid;
   grid-gap: 50px;
