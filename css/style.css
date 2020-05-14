@@ -11,6 +11,7 @@ html, body {
     color:white;
     /*  this min-height makes the bg stretch instead of repeat  */
     min-height: 100vh;
+    margin: auto;
 }
 
 img {
@@ -134,7 +135,7 @@ header{
   padding-right: 100px;
 }
 
-/*
+
 .grid-container {
   display: grid;
   grid-gap: 50px;
@@ -142,20 +143,22 @@ header{
 }
 
 .grid-item {
+  margin:0;
   text-align: center;
   padding: 10px;
   position: relative;
 }
-*/
 
-/*
+.grid-item a {
+  border: none;
+}
+
 .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-*/
 
 .contact {
   padding-top: 50px;
@@ -328,7 +331,6 @@ header{
 
 /*for tablets change back to 481px*/
 @media screen and (min-width: 501px) and (max-width: 1024px){
-/*
   .grid-container{
     display:flex;
     align-items: center;
@@ -337,7 +339,6 @@ header{
     background-color: transparent;
 
   }
-*/
   .about-img {
     width: 100%;
     height: auto;
