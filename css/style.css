@@ -20,7 +20,6 @@ img {
   min-width: 100px;
 }
 
-
 h1{
   font-size: 50px;
   line-height: 1;
@@ -65,20 +64,19 @@ nav li{
   top: 0;
 }
 
-:focus{
+:focus {
   border: 2px solid black;
 }
 
 footer{
   color: white;
-  grid-column: 1 / -1;
-  grid-row: 7 / auto;
   padding-top: 30px;
   text-align: center;
 }
 
 .nav {
-  padding: 14px 16px;
+/*    top right bottom left*/
+  padding: 50px 20px;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -87,10 +85,9 @@ footer{
   display: block;
   float:right;
   text-align: right;
-  grid-column: 1/5;
-  grid-row: 1/2;
 }
 
+/*
 .container{
   display: grid;
   grid-template-columns: 50px minmax(0, 1fr) auto auto auto auto
@@ -101,9 +98,10 @@ footer{
   min-width: 0;
   min-height: 0;
 
-/*  grid-template-rows: 20px 1200px repeat(4, 500px) 100px;*/
+  grid-template-rows: 20px 1200px repeat(4, 500px) 100px;
   width: 100vw;
 }
+*/
 
 header{
   /* background-attachment: fixed; /* Parallax effect 
@@ -114,11 +112,8 @@ header{
   background-size: cover;        Parallax effect 
   height: 800px;                 Parallax effect */ 
   text-align: center;
-  padding: 200px;
-  grid-row: 1/2;
-  grid-column: 1/-1;
+  padding-top: 200px;
 }
-
 
 .about-image{
   padding-left: 400px;
@@ -139,12 +134,7 @@ header{
   padding-right: 100px;
 }
 
-.portfolio-items {
-  padding-left: 100px;
-  padding-top: 50px;
-  padding-right: 100px;
-}
-
+/*
 .grid-container {
   display: grid;
   grid-gap: 50px;
@@ -156,13 +146,16 @@ header{
   padding: 10px;
   position: relative;
 }
+*/
 
+/*
 .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+*/
 
 .contact {
   padding-top: 50px;
@@ -171,28 +164,10 @@ header{
   padding-right: 400px;
 }
 
-.footer {
-    padding: 3em;
-    text-align: center;
-    color: aliceblue;
-}
-
-.footer .social {
-    font-size: .8em;
-    color: aliceblue;
-}
-
-.footer .info {
-    margin-top: 2em;
-    margin-bottom: 3em;
-}
-
-
 .grid-item img:hover, .graphic_des img:hover{
   -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
   filter: grayscale(80%)
 }
-
 
 .btn {
     font-size: .8rem;
@@ -204,7 +179,6 @@ header{
 }
 
 .btn:hover a, #main a:hover{
-/*    color: black;*/
     font-style: italic;
 }
 
