@@ -1,6 +1,6 @@
 html, body {
     scroll-behavior: smooth;
-    background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    background-image: linear-gradient(-45deg, rgba(23,182,230,1) 0%, rgba(15,131,194,1) 47%, rgba(22,71,196,1) 100%);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -88,22 +88,6 @@ footer{
   text-align: right;
 }
 
-/*
-.container{
-  display: grid;
-  grid-template-columns: 50px minmax(0, 1fr) auto auto auto auto
-                                auto auto auto auto 50px;
-  grid-column-gap: 20px;
-  grid-row-gap: 15px;
-
-  min-width: 0;
-  min-height: 0;
-
-  grid-template-rows: 20px 1200px repeat(4, 500px) 100px;
-  width: 100vw;
-}
-*/
-
 header{
   /* background-attachment: fixed; /* Parallax effect 
   background-image: url('../img/header_pauljarvis.jpg');
@@ -135,22 +119,34 @@ header{
   padding-right: 100px;
 }
 
-
 .grid-container {
   display: grid;
-  grid-gap: 50px;
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
   grid-template-columns: auto auto auto;
 }
 
 .grid-item {
   margin:0;
   text-align: center;
-  padding: 10px;
+  padding: 50px;
   position: relative;
+  border: 2px solid white;
 }
 
-.grid-item a {
+.grid-item a, h3 a, p a {
+  color: white;
   border: none;
+}
+
+.grid-item a:visited, .btn-outline-primary:visited, h3 a:visited, 
+p a:visited {
+  color: lightgray;
+}
+
+.grid-item a:hover, .btn-outline-primary:hover, 
+h3 a:hover, p a:hover {
+  color: darkblue;
 }
 
 .centered {
@@ -168,6 +164,7 @@ header{
 }
 
 .grid-item img:hover, .graphic_des img:hover{
+  color: white;
   -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
   filter: grayscale(80%)
 }
@@ -178,7 +175,8 @@ header{
     line-height: .8em;
     border-radius: 25px 25px 25px 25px;
     padding: .8em 1em;
-    margin-bottom: 100px
+    margin-bottom: 100px;
+    color:white;
 }
 
 .btn:hover a, #main a:hover{
@@ -189,11 +187,6 @@ header{
     background-color: transparent;
     border: 1px white solid;
     transition: all .5s;
-}
-
-.btn-outline-primary:hover {
-    color: black;
-    opacity: 0.5;
 }
 
 /* Style the links inside the navigation bar */
@@ -263,9 +256,17 @@ header{
 @media screen and (max-width: 500px){
   .grid-container{
     display:flex;
-    align-items: center;
+    align-items: space-evenly;
     justify-content: flex-start;
     flex-direction: column;
+  }
+  .grid-item{
+    margin:1em; 
+  }
+    
+  .nav {
+    padding-top: 20px;
+    padding-bottom: 0px;  
   }
   .about-img {
     width: 100%;
@@ -331,14 +332,23 @@ header{
 
 /*for tablets change back to 481px*/
 @media screen and (min-width: 501px) and (max-width: 1024px){
+/*
   .grid-container{
     display:flex;
-    align-items: center;
+    align-items: space-around;
     justify-content: flex-start;
     flex-direction: column;
     background-color: transparent;
-
   }
+  .grid-item{
+    margin:1em;
+  }
+*/
+  .nav {
+    padding-top: 20px;
+    padding-bottom: 0px;  
+  }
+
   .about-img {
     width: 100%;
     height: auto;
@@ -354,25 +364,28 @@ header{
   }
       
   .portfolio {
-    padding-top: 60px;
+    padding-top: 100px;
   }
     
   h1 {
     font-size: 17pt;
+    margin: 0 auto;
   }
     
   h2 {
     font-size: 15pt;
-  }
+    margin: 0 auto;
+    }
     
   .p {
     font-size: 15pt;
   }
 
   .contact, .form-all {
-    padding-left:0px;
-    padding-right:0px;
-    width:500px;
+    padding-top: 100px;
+    text-align: center;
+    padding-left: 150px;
+    width: 400px;
   }
 
 }
